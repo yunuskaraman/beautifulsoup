@@ -8,7 +8,7 @@ soup = BeautifulSoup(html , "html.parser")
 
 list = soup.find("tbody", {"class":"lister-list"}).find_all("tr")
 
-count=1
+count=0
 
 for tr in list:
     title = tr.find("td", {"class":"titleColumn"}).find("a").text
